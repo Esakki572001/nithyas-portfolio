@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥Nithya S🔥</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav-link.active {
+            color: #4f46e5;
+            /* Tailwind indigo-600 */
+            border-bottom: 2px solid #4f46e5;
+            transition: all 0.3s ease;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body style="font-family: 'Lora', serif;" class="bg-indigo-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold text-indigo-600"><a href="#home">Nithya S</a></div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="nav-link hover:text-indigo-600" id="nav-home">Home</a>
+                    <a href="#about" class="nav-link hover:text-indigo-600" id="nav-about">About</a>
+                    <a href="#skills" class="nav-link hover:text-indigo-600" id="nav-skills">Skills</a>
+                    <a href="#projects" class="nav-link hover:text-indigo-600" id="nav-projects">Projects</a>
+                    <a href="#contact" class="nav-link hover:text-indigo-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+            <a href="#home" class="block py-2 nav-link">Home</a>
+            <a href="#about" class="block py-2 nav-link">About</a>
+            <a href="#skills" class="block py-2 nav-link">Skills</a>
+            <a href="#projects" class="block py-2 nav-link">Projects</a>
+            <a href="#contact" class="block py-2 nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <main class="pt-20 space-y-20">
+        <section id="home" class="min-h-screen flex items-center justify-center bg-indigo-50 px-4">
+            <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                <!-- LEFT -->
+                <div id="intro-left" class="space-y-4 ml-6 md:ml-12">
+                    <h1 id="name" class="text-5xl font-extrabold text-indigo-700 leading-tight">
+                        Nithya S
+                    </h1>
+                    <h2 id="role" class="text-2xl font-medium text-gray-700">
+                        Graphic & UI/UX Designer
+                    </h2>
+                </div>
+
+                <!-- RIGHT -->
+                <div id="intro-right" class="text-gray-700 text-lg leading-relaxed">
+                    <p>
+                        Creative and motivated UI/UX designer with a strong foundation in design principles, color
+                        theory,
+                        and user-centered design.
+                        Skilled in creating engaging user interfaces and intuitive experiences across web and mobile
+                        platforms. Proficient in wireframing,
+                        prototyping, and delivering polished visual designs. Familiar with HTML and CSS, enabling
+                        effective
+                        collaboration with developers
+                        and smooth design-to-development handoff. Eager to contribute fresh ideas, collaborate with
+                        cross-functional teams, and grow
+                        within a dynamic creative environment.
+                    </p>
+                </div>
+
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-20 bg-indigo-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-indigo-700 mb-3">Education & Certifications</h2>
+                <p class="max-w-xl mx-auto text-center mb-12">Talent you have naturally. Skill is only developed by
+                    hours
+                    and hours of work.</p>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                    <!-- Left Card - Education -->
+                    <div id="education-card"
+                        class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-xl">
+
+                        <h3 class="text-2xl font-semibold text-indigo-700 mb-4 text-center">🎓 Education</h3>
+                        <ul class="space-y-4 text-gray-700">
+                            <li>
+                                <p class="font-semibold">Higher Certificate In Graphic Design and User Interface (UI)
+                                    Design
+                                </p>
+                                <p class="text-sm text-gray-500">Image Creative Education, Madurai, May 2025</p>
+                            </li>
+                            <li>
+                                <p class="font-semibold">Masters of Computer Application</p>
+                                <p class="text-sm text-gray-500">2021 - 2023 • Mepco Schlenk Engineering College</p>
+                            </li>
+                            <li>
+                                <p class="font-semibold">Bachelor of Science in Information Technology</p>
+                                <p class="text-sm text-gray-500">2018 - 2021 • V.V.Vanniyaperumal College for Women</p>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Right Card - Certification -->
+                    <div id="certification-card"
+                        class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-xl">
+
+                        <h3 class="text-2xl font-semibold text-indigo-700 mb-4 text-center">📜 Certifications</h3>
+                        <ul class="space-y-4 text-gray-700">
+                            <li>
+                                <p class="font-semibold">Poster Making</p>
+                                <p class="text-sm text-gray-500">2023 • Mepco Schlenk Engineering College</p>
+                            </li>
+                            <li>
+                                <p class="font-semibold">Red Hat Certified System Administrator in RHEL</p>
+                                <p class="text-sm text-gray-500">2022 • Mepco Schlenk Engineering College</p>
+                            </li>
+                            <li>
+                                <p class="font-semibold">Proficiency in Core, Ailled and NME</p>
+                                <p class="text-sm text-gray-500">2020 • V.V.Vanniyaperumal college for women</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="skills" class="py-16 bg-indigo-50 text-center">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-semibold mb-6 text-indigo-700">Skills</h2>
+                <p class="max-w-2xl mx-auto mb-10">
+                    My current technical skill levels across tools and technologies.
+                </p>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition group flex flex-col items-center justify-center h-40">
+                        <span class="text-4xl text-indigo-700 percent" data-percent="90">0%</span>
+                        <span class="text-2xl text-gray-800 font-semibold mt-3">HTML</span>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition group flex flex-col items-center justify-center h-40">
+                        <span class="text-4xl text-indigo-700 percent" data-percent="75">0%</span>
+                        <span class="text-2xl text-gray-800 font-semibold mt-3">CSS</span>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition group flex flex-col items-center justify-center h-40">
+                        <span class="text-4xl text-indigo-700 percent" data-percent="30">0%</span>
+                        <span class="text-2xl text-gray-800 font-semibold mt-3">JavaScript</span>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition group flex flex-col items-center justify-center h-40">
+                        <span class="text-4xl text-indigo-700 percent" data-percent="85">0%</span>
+                        <span class="text-2xl text-gray-800 font-semibold mt-3">Photoshop</span>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition group flex flex-col items-center justify-center h-40">
+                        <span class="text-4xl text-indigo-700 percent" data-percent="80">0%</span>
+                        <span class="text-2xl text-gray-800 font-semibold mt-3">Illustrator</span>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition group flex flex-col items-center justify-center h-40">
+                        <span class="text-4xl text-indigo-700 percent" data-percent="75">0%</span>
+                        <span class="text-2xl text-gray-800 font-semibold mt-3">InDesign</span>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition group flex flex-col items-center justify-center h-40">
+                        <span class="text-4xl text-indigo-700 percent" data-percent="85">0%</span>
+                        <span class="text-2xl text-gray-800 font-semibold mt-3">Figma</span>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl shadow-md hover:shadow-xl transition group flex flex-col items-center justify-center h-40">
+                        <span class="text-4xl text-indigo-700 percent" data-percent="70">0%</span>
+                        <span class="text-2xl text-gray-800 font-semibold mt-3">Animate CC</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-indigo-50 text-gray-800">
+            <div class="max-w-7xl mx-auto px-4">
+                <!-- Section Title -->
+                <h2 class="text-3xl font-semibold mb-6 text-indigo-700 text-center">Projects</h2>
+                <p class="max-w-xl mx-auto text-center mb-10">
+                    Explore my creative work on Behance. From digital designs to print materials, my portfolio reflects
+                    my
+                    design vision.
+                </p>
+
+                <!-- Tabs -->
+                <div class="flex justify-center gap-4 mb-10 flex-wrap">
+                    <button class="tab-btn bg-indigo-600 text-white px-4 py-2 rounded active" data-tab="all">All
+                        Projects</button>
+                    <button class="tab-btn bg-gray-200 text-gray-700 px-4 py-2 rounded" data-tab="uiux">UI/UX
+                        Design</button>
+                    <button class="tab-btn bg-gray-200 text-gray-700 px-4 py-2 rounded" data-tab="graphic">Graphic
+                        Design</button>
+                </div>
+
+
+                <!-- Projects Grid -->
+                <div id="projects-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                    <!-- Project 1 (UI/UX) -->
+                    <div
+                        class="project-card uiux bg-white rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl relative group">
+                        <img src="images/project1.jpg" alt="Project 1" class="w-full h-64 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold text-center text-indigo-700 py-4">UI/UX Case Study</h3>
+                        <a href="https://www.behance.net/gallery/225214327/UIUX-Case-Study-for-Unskilled-Labor-Empowerment"
+                            target="_blank"
+                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md opacity-0 group-hover:opacity-100 transition">
+                            <i class="fas fa-eye text-indigo-700"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 2 (UI/UX) -->
+                    <div
+                        class="project-card uiux bg-white rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl relative group">
+                        <img src="images/project2.jpg" alt="Project 2" class="w-full h-64 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold text-center text-indigo-700 py-4">Mobile App UI Design</h3>
+                        <a href="https://www.behance.net/gallery/225338783/Mobile-App-UI-Design" target="_blank"
+                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md opacity-0 group-hover:opacity-100 transition">
+                            <i class="fas fa-eye text-indigo-700"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 3 (UI/UX) -->
+                    <div
+                        class="project-card uiux bg-white rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl relative group">
+                        <img src="images/project3.jpg" alt="Project 3" class="w-full h-64 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold text-center text-indigo-700 py-4">Dashboard UI</h3>
+                        <a href="https://www.behance.net/gallery/225335675/Dashboard-UI" target="_blank"
+                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md opacity-0 group-hover:opacity-100 transition">
+                            <i class="fas fa-eye text-indigo-700"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 4 (Graphic) -->
+                    <div
+                        class="project-card graphic bg-white rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl relative group">
+                        <img src="images/project4.jpg" alt="Project 4" class="w-full h-64 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold text-center text-indigo-700 py-4">Futuristic UI/UX</h3>
+                        <a href="https://www.behance.net/gallery/225341495/Futuristic-UIUX-Case-Study" target="_blank"
+                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md opacity-0 group-hover:opacity-100 transition">
+                            <i class="fas fa-eye text-indigo-700"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 5 (Graphic) -->
+                    <div
+                        class="project-card graphic bg-white rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl relative group">
+                        <img src="images/project5.jpg" alt="Project 5" class="w-full h-64 object-cover rounded-t-lg">
+                        <h3 class="text-lg font-semibold text-center text-indigo-700 py-4">Food App UI</h3>
+                        <a href="https://www.behance.net/gallery/225343229/Food-Delivery-Mobile-App-UI" target="_blank"
+                            class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md opacity-0 group-hover:opacity-100 transition">
+                            <i class="fas fa-eye text-indigo-700"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-indigo-50 text-gray-800">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-indigo-700 mb-10">Let's Work Together</h2>
+
+                <div class="max-w-xl mx-auto text-center space-y-4">
+                    <p class="text-gray-700">Have a project in mind? Let’s bring your ideas to life! Whether it's web
+                        development, UI/UX design, or a custom solution, I’m here to help.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded">
+                    </div>
+
+                    <input type="text" placeholder="Subject" class="w-full p-3 border border-gray-300 rounded">
+                    <textarea rows="4" placeholder="Message"
+                        class="w-full p-3 border border-gray-300 rounded"></textarea>
+
+                    <button class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Send
+                        Message</button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="relative mt-20">
+            <footer class="bg-indigo-700 text-white py-10">
+                <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- Left: Contact Info -->
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-semibold mb-2">Location:</h3>
+                        <p>Virudhunagar, Tamilnadu.</p>
+                        <h3 class="text-lg font-semibold mt-4">Call me:</h3>
+                        <p>+91 948-640-8240</p>
+                        <h3 class="text-lg font-semibold mt-4">Mail me:</h3>
+                        <p>nithyas30072001@gmail.com</p>
+                    </div>
+
+                    <!-- Right: Navigation & Social -->
+                    <div class="md:text-right space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Navigation</h3>
+                            <ul class="list-disc text-left pl-5 space-y-1 inline-block">
+                                <li><a href="#home" class="hover:underline">Home</a></li>
+                                <li><a href="#about" class="hover:underline">About</a></li>
+                                <li><a href="#skills" class="hover:underline">Skills</a></li>
+                                <li><a href="#projects" class="hover:underline">Projects</a></li>
+                                <li><a href="#contact" class="hover:underline">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Follow Me</h3>
+                            <div class="flex justify-start md:justify-end gap-4 text-xl">
+                                <a href="mailto:nithyas30072001@gmail.com" target="_blank" class="hover:text-gray-300">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/nithya37/" target="_blank"
+                                    class="hover:text-gray-300">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.behance.net/nithya_s" target="_blank" class="hover:text-gray-300">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Center -->
+                <div class="text-center mt-8 text-sm">
+                    &copy; <span id="year"></span> Developed by <span class="font-semibold">Nithya S</span>. All rights
+                    reserved.
+                </div>
+
+            </footer>
+        </section>
+
+
+
+
+
+
+        <!-- JS for Mobile Menu -->
+        <script src="script.js"></script>
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Active nav link highlight on click
+            document.querySelectorAll(".nav-link").forEach(link => {
+                link.addEventListener("click", function () {
+                    document.querySelectorAll(".nav-link").forEach(el => el.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+
+            // Highlight nav link on scroll
+            const sections = document.querySelectorAll("section[id]");
+            window.addEventListener("scroll", () => {
+                let scrollY = window.pageYOffset;
+                sections.forEach(current => {
+                    const sectionHeight = current.offsetHeight;
+                    const sectionTop = current.offsetTop - 80;
+                    const sectionId = current.getAttribute("id");
+
+                    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove("active"));
+                        document.querySelector(".nav-link[href*=" + sectionId + "]")?.classList.add("active");
+                    }
+                });
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+        </script>
+        <script>
+            const tabButtons = document.querySelectorAll(".tab-btn");
+            const cards = document.querySelectorAll(".project-card");
+
+            tabButtons.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    tabButtons.forEach(b => b.classList.remove("bg-indigo-600", "text-white", "active"));
+                    tabButtons.forEach(b => b.classList.add("bg-gray-200", "text-gray-700"));
+
+                    btn.classList.add("bg-indigo-600", "text-white", "active");
+                    btn.classList.remove("bg-gray-200", "text-gray-700");
+
+                    const tab = btn.getAttribute("data-tab");
+
+                    cards.forEach(card => {
+                        card.style.display = (tab === "all" || card.classList.contains(tab)) ? "block" : "none";
+                    });
+                });
+            });
+        </script>
+
+</body>
+
+</html>
